@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBROS</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body style="background-image: url('../img/fondo2.jpeg')">
+    
+    <nav style="background-image: url('../img/fondo4.jpeg')">
+        <h1><i class="fa-solid fa-shop"></i>   <span id="nombre"> </span> </h1>
+        <ul>
+            <li><a href="../login.html" class="algo">Inicio</a></li>
+            <li><button onclick="cerrarSession()">LogOut</button></li>
+        </ul>
+    </nav>
+    
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>La escuela del Bien y del Mal</h2>
+        <a href="../libros/La escuela del bien y del mal - Soman Chainani (1).pdf" target="_blank">
+            <img class="band" src="../img/Escuela del bien y el mal 1.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+  <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>La escuela del Bien y del Mal: un mundo sin príncipes Soman Chainini</h2>
+        <a href="../libros/🎭Escuela del bien y del mal 2 (@jazzypatrona).pdf" target="_blank">
+            <img class="band" src="../img/La escuela del Bien y del Mal Vol_ 2_ Un mundo sin príncipes (Puck).jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>La escuela del Bien y del Mal:  El último para siempre Soman Chainini</h2>
+        <a href="../libros/🎭 The Last Ever After (@jazzypatrona) (1).pdf" target="_blank">
+            <img class="band" src="../img/Escuela del bien y el mal 3.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>La escuela del Bien y del Mal:En Busca de la Gloria</h2>
+        <a href="../libros/La Escuela del Bien Y del Mal 4. En Busca de la Gloria.pdf" target="_blank">
+            <img class="band" src="../img/Escuela del bien y el mal 4.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>La escuela del Bien y del Mal:La bola de cristal del tiempo Soman Chainini</h2>
+        <a href="../libros/La escuela del bien y del mal 5 La bola de cristal del tiempo.pdf" target="_blank">
+            <img class="band" src="../img/Escuela del bien y el mal 5.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>La escuela del Bien y del Mal:un rey verdadero Soman Chainini</h2>
+        <a href="../libros/La escuela del bien y del mal 6 Un rey verdadero.pdf" target="_blank">
+            <img class="band" src="../img/Escuela del bien y el mal 6.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+        </div>
+        <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>La escuela del Bien y del Mal:un rey verdadero Soman Chainini</h2>
+        <a href="../libros/La escuela del bien y del mal 6 Un rey verdadero.pdf" target="_blank">
+            <img class="band" src="../img/Escuela del bien y el mal 6.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+        </div>
+
+        <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Gravity Falls Diario 1</h2>
+        <a href="../libros/🎭Diario 1 de Gravity Falls (@jazzypatrona).pdf" target="_blank">
+            <img class="band" src="../img/Diario 1 Gravity Falls.jfif" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+        </div>
+        <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Gravity Falls Diario 2</h2>
+        <a href="../libros/Diario_2.pdf" target="_blank">
+            <img class="band" src="../img/DIARIO 2 gravity falls.jfif" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+        </div>
+        <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Gravity Falls Diario 3</h2>
+        <a href="../libros/🎭Diario 3 de Gravity Falls (@jazzypatrona).pdf" target="_blank">
+            <img class="band" src="../img/Diario 3 Gravity Falls.jfif" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+        </div>
+        <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Aladdin: Un giro inesperado</h2>
+        <a href="../libros/Un giro inesperado, Aladdín.pdf" target="_blank">
+            <img class="band" src="../img/▷ Libros para leer Aladdín_ Un giro inesperado (PDF ePUB).jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+        </div>
+        <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+         <h2>Hocus Pocus</h2>
+        <a href="../libros/Hocus Pocus and the all new sequel_Lectura (Ingles).pdf" target="_blank">
+            <img class="band" src="../img/Hocus-Pocus-Hocus-Pocus-Le-roman-du-film-et-une-suite-inédite-A_-W.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+        </div>
+        <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Pesadilla Antes de Navidad</h2>
+        <a href="../libros/🎭El Extraño Mundo de Jack  (@jazzypatrona).pdf" target="_blank">
+            <img class="band" src="../img/Pesadilla antes de navidad.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+        </div>
+        <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+  <h2>Frankenweenie</h2>
+        <a href="../libros/🎭Frankenweenie (@jazzypatrona).pdf" target="_blank">
+            <img class="band" src="../img/Frankenweenie_ A Graphic Novel (ebook), Disney Book Group _ 9781423190585 _ Boeken _ bol.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+        </div>
+        <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Cuentos Para Niñas Valientes</h2>
+        <a href="../libros/🎭Cuentos para Niñas Valientes (princesas) (@jazzypatrona).pdf" target="_blank">
+            <img class="band" src="../img/Cuentos para niñas valientes.png" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+        </div>
+        <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+       <h2>Coraline</h2>
+        <a href="../libros/🎭Coraline Neil Gaiman (@jazzypatrona).pdf" target="_blank">
+            <img class="band" src="../img/Coraline libro_book.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+        </div>
+  
+
+
+    <script src="../assets/js/body.js"></script>
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/comentarios.js"></script>
+    <script src="https://kit.fontawesome.com/76e20a326e.js" crossorigin="anonymous"></script>
+</body>
+</html>

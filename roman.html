@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBROS</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body style="background-image: url('../img/fondo2.jpeg')">
+    
+    <nav style="background-image: url('../img/fondo4.jpeg')">
+        <h1><i class="fa-solid fa-shop"></i>   <span id="nombre"> </span> </h1>
+        <ul>
+            <li><a href="../login.html" class="algo">Inicio</a></li>
+            <li><button onclick="cerrarSession()">LogOut</button></li>
+        </ul>
+    </nav>
+    
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Orgullo y prejuicios</h2>
+        <a href="../libros/orgullo y prejuicios.pdf" target="_blank">
+            <img class="band" src="../img/Orgullo y Prejuicio.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Save Me </h2>
+        <a href="../libros/Save Me - Mona Kasten (2).pdf" target="_blank">
+            <img class="band" src="../img/Save me.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Save You</h2>
+        <a href="../libros/2. Save You - Mona Kasten.pdf" target="_blank">
+            <img class="band" src="../img/Save You.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Save Us</h2>
+        <a href="../libros/Save Us - Mona Kasten (2).pdf" target="_blank">
+            <img class="band" src="../img/Save Us.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+
+
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Sigue Mi Voz </h2>
+        <a href="../libros/Ariana Godoy - Sigue Mi Voz.pdf" target="_blank">
+            <img class="band" src="../img/Sigue mi voz_ Por la autora de A través de mi ventana (edición revisada por la autora) (Wattpad).jfif" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>A través de mi ventana </h2>
+        <a href="../libros/A traves de mi ventana- Ariana Godoy.pdf" target="_blank">
+            <img class="band" src="../img/Portada A Través De Mi Ventana.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>A Través De Ti</h2>
+        <a href="../libros/Hidalgos 2 - A traves de ti - Ariana Godoy.pdf" target="_blank">
+            <img class="band" src="../img/A través de ti.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>A Través De La LLuvia</h2>
+        <a href="../libros/Hidalgos 3 - A traves de la lluvia - Ariana Godoy.pdf" target="_blank">
+            <img class="band" src="../img/A Través De La Lluvia (Edición Revisada Por La Autora) (Tri___.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Boulevard </h2>
+        <a href="../libros/Boulevard Libro 1 Edición especial i Z-Librar.pdf" target="_blank">
+            <img class="band" src="../img/Boulevard edicion ilustrada.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Despues de Él </h2>
+        <a href="../libros/Boulevard_2_Despues_de_él_edición_revisada_por_la_autora_Flor (2).pdf" target="_blank">
+            <img class="band" src="../img/Despues de el.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Antes de Ella</h2>
+        <a href="../libros/3. BOULEVARD. ANTES DE ELLA - TRILOGÍA PRECUELA.pdf" target="_blank">
+            <img class="band" src="../img/Antes de ella.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Eterno</h2>
+        <a href="../libros/4-Eterno-de-Flor M Salvador- Boulevard.pdf" target="_blank">
+            <img class="band" src="../img/Eterno.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Bad Ash: Saltan chispas </h2>
+        <a href="../libros/Bad ash. Saltan chispas - Alina Not.pdf" target="_blank">
+            <img class="band" src="../img/Portada Bad.jfif" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Bas Ash: Sin Miedo</h2>
+        <a href="../libros/Bad Ash 2 - Sin miedo - Alina Not (1).pdf" target="_blank">
+            <img class="band" src="../img/_BAD ASH_ SIN MIEDO_ de Alina not.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Bad Ash: Respira</h2>
+        <a href="../libros/Bad-Ash-3.-Respira-Alina-Not.pdf" target="_blank">
+            <img class="band" src="../img/bad ash Respira – Alina Not.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Bad Ash: Suelo Sagrado I</h2>
+        <a href="../libros/bad ash suelo_sagrado_1_1685489973 (1).pdf" target="_blank">
+            <img class="band" src="../img/Bad Ash suelo sagrado I.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Bad Ash: Suelo Sagrado II</h2>
+        <a href="../libros/bad ash Suelo sagrado II - Alina Not (2).pdf" target="_blank">
+            <img class="band" src="../img/Bad Ash suelo sagrado II.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+
+
+
+
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Tardes de Otoño</h2> </h2>
+        <a href="../libros/Tardes de Otoño (Joana Marcús) (z-lib.org).pdf" target="_blank">
+            <img class="band" src="../img/Tardes de otoño_3.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>La Última Nota</h2>
+        <a href="../libros/La última nota - Joana Marcus (1).pdf" target="_blank">
+            <img class="band" src="../img/La Última Nota.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Culpa Mía</h2>
+        <a href="../libros/culpa mia.pdf" target="_blank">
+            <img class="band" src="../img/Culpa Mía.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Culpa Tuya</h2>
+        <a href="../libros/Culpa tuya (Culpables 2) - Mercedes Ron.pdf" target="_blank">
+            <img class="band" src="../img/Culpa Tuya.png" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Culpa Nuestra</h2>
+        <a href="../libros/3. Culpa nuestra - Mercedes Ron (1).pdf" target="_blank">
+            <img class="band" src="../img/Culpa Nuestra.png" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+
+
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Perfectos Mentirosos</h2>
+        <a href="../libros/01. Perfectos mentirosos - Alex Mirez.pdf" target="_blank">
+            <img class="band" src="../img/Perfectos mentiroso_ mentiras y secretos.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>El Fabricante De Lagrimas</h2>
+        <a href="../libros/🎭Fabricante de lágrimas de Erin Doom (@jazzypatrona).pdf" target="_blank">
+            <img class="band" src="../img/Fabricante de lágrimas by Erin Doom.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Strange</h2>
+        <a href="../libros/Strange - Alex Mirez.pdf" target="_blank">
+            <img class="band" src="../img/Strange.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Strange: Libro 2</h2>
+        <a href="../libros/Strange 2 - Alex Mirez.pdf" target="_blank">
+            <img class="band" src="../img/Strange libro 2.png" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Belleza Oscura</h2>
+        <a href="../libros/Belleza oscura - Jessica Rivas (1).pdf" target="_blank">
+            <img class="band" src="../img/Belleza Oscura.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>El Rey Oscuro</h2>
+        <a href="../libros/02 - El Rey Oscuro - Jessica Rivas.pdf" target="_blank">
+            <img class="band" src="../img/El Rey Oscuro.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Romper El Hielo</h2>
+        <a href="../libros/Romper el hielo - Hannah Grace.pdf" target="_blank">
+            <img class="band" src="../img/Romper el hielo, Hannah Grace.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Saltan chispas</h2>
+        <a href="../libros/2. Saltan chispas - Hannah Grace.pdf" target="_blank">
+            <img class="band" src="../img/Saltan Chispas.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>En Las Nubes</h2>
+        <a href="../libros/En-las-nubes-Hannah-Grace.pdf" target="_blank">
+            <img class="band" src="../img/En las nubes - Hannah Grace en epub y mobi.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Cambio De Corazón</h2>
+        <a href="../libros/Cambio de corazón (Ash-Quintana)∘˙˚ིྀ˚˙∘🍓.pdf" target="_blank">
+            <img class="band" src="../img/Cambio de Corazón.jpeg">
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>El Amor Prende De Un Hilo</h2>
+        <a href="../libros/El amor pende de un hilo - Lucy Score.pdf" target="_blank">
+            <img class="band" src="../img/El Amor Prende De Un Hilo.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Romper El Circulo</h2>
+        <a href="../libros/Romper el circulo - Colleen Hoover.pdf" target="_blank">
+            <img class="band" src="../img/Romper el círculo - Colleen Hoover.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Volver a Empezar</h2>
+        <a href="../libros/02. Volver a empezar  - Colleen Hoover.pdf" target="_blank">
+            <img class="band" src="../img/Volver a empezar.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+   
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Twisted Games</h2>
+        <a href="../libros/Twisted Games- Ana Huang.pdf" target="_blank">
+            <img class="band" src="../img/Twisted Games.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Twisted Hate</h2>
+        <a href="../libros/Twisted Hate-Ana Huang.pdf" target="_blank">
+            <img class="band" src="../img/Twisted Hate.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Twisted Lies</h2>
+        <a href="../libros/Twisted Lies- Ana Huang.pdf" target="_blank">
+            <img class="band" src="../img/Twisted Lies.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Twisted Love </h2>
+        <a href="../libros/Twisted Love - Ana Huang.pdf" target="_blank">
+            <img class="band" src="../img/Twisted Love by Ana Huang the book you need to read booktok.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Antes De Diciembre</h2>
+        <a href="../libros/Antes de diciembre (Meses a tu lado) (1).pdf" target="_blank">
+            <img class="band" src="../img/Antes de Diciembre.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Despúes de Diciembre</h2>
+        <a href="../libros/Después de diciembre (Meses a tu lado) (2).pdf" target="_blank">
+            <img class="band" src="../img/Despues de diciembre.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Tres Mese</h2>
+        <a href="../libros/3.Tres meses - Joana Marcús.pdf" target="_blank">
+            <img class="band" src="../img/¡¡Tres Meses en preventa y estará en venta el 9 de marzo de este año!! ¡¡LA PORTADA ESTÁ PRECIOSA!!.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Las Luces de Febrero</h2>
+        <a href="../libros/4.Las_luces_de_febrero_-_Joana_Marcus (1).pdf" target="_blank">
+            <img class="band" src="../img/Las luces de febrero.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>El Diablo Viste De Prada</h2>
+        <a href="../libros/El diablo viste de Prada.pdf" target="_blank">
+            <img class="band" src="../img/El diablo viste de prada   lauren weisberger.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="../assets/js/body.js"></script>
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/comentarios.js"></script>
+    <script src="https://kit.fontawesome.com/76e20a326e.js" crossorigin="anonymous"></script>
+</body>
+</html>

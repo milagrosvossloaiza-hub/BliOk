@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBROS</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body style="background-image: url('../img/fondo2.jpeg')">
+    
+    <nav style="background-image: url('../img/fondo4.jpeg')">
+        <h1><i class="fa-solid fa-shop"></i>   <span id="nombre"> </span> </h1>
+        <ul>
+            <li><a href="../login.html" class="algo">Inicio</a></li>
+            <li><button onclick="cerrarSession()">LogOut</button></li>
+        </ul>
+    </nav>
+    
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>IT(eso)</h2>
+        <a href="../libros/It (eso) - Stephen King (2).pdf" target="_blank">
+            <img class="band" src="../img/Portada It.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    
+
+    
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Carrie</h2>
+    <a href="../libros/Carrie - Stephen King.pdf" target="_blank">
+        <img class="band" src="../img/Carrie.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+<h2>Joyland</h2>
+        <a href="../libros/Joyland (Stephen King) (Z-Library).pdf" target="_blank">
+            <img class="band" src="../img/Joyland.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>La Niebla</h2>
+        <a href="../libros/La niebla - Stephen King.pdf" target="_blank">
+            <img class="band" src="../img/La Niebla.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>El Visitante</h2>
+        <a href="../libros/El_visitante_Stephen_King.pdf" target="_blank">
+            <img class="band" src="../img/El visitante - Stephen King.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Resplandor</h2>
+        <a href="../libros/resplandor, El - Stephen King.pdf" target="_blank">
+            <img class="band" src="../img/El Resplandor (Stephen King).jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Apocalipsis</h2>
+        <a href="../libros/Apocalipsis - Stephen King.pdf" target="_blank">
+            <img class="band" src="../img/Apocalipsis.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Insomnia</h2>
+        <a href="../libros/Insomnia - Stephen King.pdf" target="_blank">
+            <img class="band" src="../img/Insomnia.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+
+    <script src="../assets/js/body.js"></script>
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/comentarios.js"></script>
+    <script src="https://kit.fontawesome.com/76e20a326e.js" crossorigin="anonymous"></script>
+</body>
+</html>

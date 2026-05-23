@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBROS</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body style="background-image: url('../img/fondo2.jpeg')">
+    
+    <nav style="background-image: url('../img/fondo4.jpeg')">
+        <h1><i class="fa-solid fa-shop"></i>   <span id="nombre"> </span> </h1>
+        <ul>
+            <li><a href="../login.html" class="algo">Inicio</a></li>
+            <li><button onclick="cerrarSession()">LogOut</button></li>
+        </ul>
+    </nav>
+    
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Harry Potter: La piedra filosofal</h2>
+        <a href="../libros/Rowling, J.K. - Harry Potter 01 - La Piedra Filosofal (1).pdf" target="_blank">
+            <img class="band" src="../img/Harry Potter y la piedra filosofal.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Harry Potter: La Cámara Secreta</h2>
+        <a href="../libros/Rowling, J.K. - Harry Potter 02 - La Cámara Secreta (1).pdf" target="_blank">
+            <img class="band" src="../img/Harry Potter Y La Cámara Secreta.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Harry Potter: El Prisionero De Azkaban</h2>
+        <a href="../libros/Rowling,_J_K_Harry_Potter_03_El_Prisionero_de_Azkaban_1.pdf" target="_blank">
+            <img class="band" src="../img/Harry Potter y el prisionero de Azkaban (2).jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Harry Potter: El Cáliz De Fuego</h2>
+        <a href="../libros/Rowling, J.K. - Harry Potter 04 - El Cáliz de Fuego (1).pdf"target="_blank">
+            <img class="band" src="../img/HARRY POTTER Y EL CALIZ DE FUEGO (RUSTICA).jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Harry Potter: La Orden del Fénix</h2>
+        <a href="../libros/Rowling, J.K. - Harry Potter 05 - La Orden del Fénix (1).pdf" target="_blank">
+            <img class="band" src="../img/Harry Potter La orden del Fenix.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Harry Potter: El Misterio Del Príncipe</h2>
+        <a href="../libros/Rowling,_J_K_Harry_Potter_06_El_Misterio_del_Príncipe_1.pdf" target="_blank">
+            <img class="band" src="../img/Harry Potter El misterio del príncipe.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Harry Potter: Las Reliquias De La Muerte</h2>
+        <a href="../libros/Rowling,_J_K_Harry_Potter_07_Las_Reliquias_de_la_Muerte_1_1.pdf" target="_blank">
+            <img class="band" src="../img/Harry Potter y las Reliquias de la Muerte.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Harry Potter: El Legado Maldito</h2>
+        <a href="../libros/Harry Potter y el legado maldito (1) (1).pdf" target="_blank">
+            <img class="band" src="../img/Harry Potter y El Legado Maldito.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>El Señor De Los Anillos: Hobbit</h2>
+        <a href="../libros/El señor de los anllos 1.pdf" target="_blank">
+            <img class="band" src="../img/El señor de los anillos Hobbit.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>El Señor De Los Anillos: La Comunidad Del anillo</h2>
+        <a href="../libros/El_señor_de_los_anillos_1_La_comunidad_del_anillo_ilustrado_J_R.pdf" target="_blank">
+            <img class="band" src="../img/El señor de los anillos la comunidad del anillo.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>El Señor De Los Anillos: Las Dos Torres</h2>
+        <a href="../libros/El_señor_de_los_anillos_2_Las_dos_torres_ilustrado_J_R_R_Tolkien.pdf" target="_blank">
+            <img class="band" src="../img/El señor de los anillos Las Dos Torres.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>El Señor De Los Anillos: El Retorno Del Rey</h2>
+        <a href="../libros/El_señor_de_los_anillos_3_El_retorno_del_rey_ilustrado_J_R_R_Tolkien.pdf" target="_blank">
+            <img class="band" src="../img/El señor de los anillos el retorno del rey.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Los Juegos Del Hambre</h2>
+        <a href="../libros/Los juegos del hambre.pdf" target="_blank">
+            <img class="band" src="../img/Los Juegos Del Hambre Libro 1 - Suzanne Collins.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Los juegos del hambre: En Llamas</h2>
+        <a href="../libros/los juegos del hambre En-llamas-pdf.pdf" target="_blank">
+            <img class="band" src="../img/Los Juegos Del Hambre - En Llamas Libro 2 - Suzanne Collins.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Los juegos del hambre: Sinsajo</h2>
+        <a href="../libros/Los juegos del hambre Sinsajo-pdf.pdf" target="_blank">
+            <img class="band" src="../img/Los Juegos Del Hambre - Sinsajo Libro 3 - Suzanne Collins.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Los juegos del hambre: Balada De Pajaros Cantores Y Serpientes</h2>
+        <a href="../libros/Los juegos del hambre Balada_de_pajaros_cantores_y_serpientes_Suzanne_Collins.pdf" target="_blank">
+            <img class="band" src="../img/Los Juegos del Hambre 4 - Balada de pájaros cantores y serpientes (edición especial película) (Ficción).jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Los juegos del hambre: Amanecer En La Cosecha</h2>
+        <a href="../libros/Amanecer en la cosecha - Suzanne Collins (2).pdf" target="_blank">
+            <img class="band" src="../img/Amanecer en la cosecha.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Divergente</h2>
+    <a href="../libros/Divergente - Veronica Roth.pdf" target="_blank">
+        <img class="band" src="../img/Divergente.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Divergente: Insurgente</h2>
+    <a href="../libros/Insurgente - Veronica Roth.pdf" target="_blank">
+        <img class="band" src="../img/Divergente Insurgente_ de Veronica Roth.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Divergente: Leal</h2>
+    <a href="../libros/Leal - Veronica Roth.pdf" target="_blank">
+        <img class="band" src="../img/Divergente LEAL - Verónica Roth.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Divergente: Cuatro</h2>
+    <a href="../libros/Cuatro - Veronica Roth.pdf" target="_blank">
+        <img class="band" src="../img/Divergente Four.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Game of Thrones</h2>
+    <a href="../libros/1 Juego de tronos.pdf" target="_blank">
+        <img class="band" src="../img/Juegos de tronos 1.png" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Game Of Thrones: Choque de Reyes </h2>
+    <a href="../libros/juego de tronos 2 Choque de Reyes.pdf" target="_blank">
+        <img class="band" src="../img/Juego de tronos choque de reyes nº 04_04 blanco.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Game of Thrones: Tormenta de Espadas</h2>
+    <a href="../libros/juego de tronos 3 Tormenta de espadas.pdf" target="_blank">
+        <img class="band" src="../img/juego de tronos  3 - TORMENTA DE ESPADAS.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Game of Thrones: Festín de Cuervos </h2>
+    <a href="../libros/juego de tronos 4 Festín de cuervos.pdf" target="_blank">
+        <img class="band" src="../img/Juego de tronos festin de cuervos.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Game of Thrones: Danza de Dragones</h2>
+    <a href="../libros/juego de tronos 5 Danza de dragones.pdf" target="_blank">
+        <img class="band" src="../img/Juego de tronos danza de dragones.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Maze Runner: Correr o Morir</h2>
+    <a href="../libros/▪Correr o morir_Maze Runner - James Dashner.pdf" target="_blank">
+        <img class="band" src="../img/MAZE RUNNER_ CORRER O MORIR - JAMES DASHNER.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Maze Runner: Prueba de Fuego </h2>
+    <a href="../libros/2- The Maze Runner-Prueba de fuego- James Dashner.pdf" target="_blank">
+        <img class="band" src="../img/Maze Runner Prueba de Fuego.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Maze Runner: La Cura Mortal</h2>
+    <a href="../libros/3-Maze runner-La cura mortal-James Dashner.pdf" target="_blank">
+        <img class="band" src="../img/Maze Runner - La Cura Mortal Libro 3 - James Dashner.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Maze Runner: Virus Letal</h2>
+    <a href="../libros/Virus Letal - James Dashner.pdf" target="_blank">
+        <img class="band" src="../img/Maze Runner Virus letal.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Maze Runner: Código C.R.U.E.L. </h2>
+    <a href="../libros/5-(Precuela-2)Maze Runner - Código Cruel-James Dashner (1).pdf" target="_blank">
+        <img class="band" src="../img/Maze Runner Código-C_R.U.E.jpg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Narnia: El Sobrino del Mago</h2>
+    <a href="../libros/Lewis,_C_S_Las_Crónicas_de_Narnia_0.5_El_Sobrino_del_Mago.pdf" target="_blank">
+        <img class="band" src="../img/Narnia El sobrino del mago (PDF ePUB).jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Narnia: El León, La Bruja Y El Armario </h2>
+    <a href="../libros/Lewis,_C_S_Las_Crónicas_de_Narnia_01_El_León,_la_Bruja_y_el_Ropero.pdf" target="_blank">
+        <img class="band" src="../img/Narnia el leon, la bruja y el armario.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Narnia: El Caballo y El Muchacho </h2>
+    <a href="../libros/Lewis,_C_S_Las_Crónicas_de_Narnia_05_El_Caballo_y_su_Niño.pdf" target="_blank">
+        <img class="band" src="../img/Narnia_ Libro tres el caballo y el muchacho.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div><div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Narnia: El Príncipe Caspian </h2>
+    <a href="../libros/Lewis,_C_S_Las_Crónicas_de_Narnia_02_El_Príncipe_Caspian.pdf" target="_blank">
+        <img class="band" src="../img/El príncipe Caspian_ Las crónicas de Narnia 4 (Cometa +10).jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Narnia: La travesía del Viajero del Alba </h2>
+    <a href="../libros/Lewis,_C_S_Las_Crónicas_de_Narnia_03_La_Travesía_del_Viajero_del.pdf" target="_blank">
+        <img class="band" src="../img/Narnia la travesia del viajero de alba.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Narnia: La Silla de Plata </h2>
+    <a href="../libros/Lewis, C.S. - Las Crónicas de Narnia 04 - La Silla de Plata.pdf" target="_blank">
+        <img class="band" src="../img/LA SILLA DE PLATA VOL_ 06_ CRONICAS DE NARNIA.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Narnia: La Última Batalla </h2>
+    <a href="../libros/Lewis,_C_S_Las_Crónicas_de_Narnia_06_La_Última_Batalla.pdf" target="_blank">
+        <img class="band" src="../img/La última batalla_ Las crónicas de Narnia 7 (Cometa +10).jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>El Eternauta(primera parte)</h2>
+    <a href="../libros/El Eternauta (Parte 01).pdf" target="_blank">
+        <img class="band" src="../img/El eternauta I.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>El Eternauta(Segunda Parte)</h2>
+    <a href="../libros/El-Eternauta-Parte-02.pdf.pdf" target="_blank">
+        <img class="band" src="../img/El Eternauta II.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Cien Años De Soledad</h2>
+    <a href="../libros/Cien años de Soledad.pdf" target="_blank">
+        <img class="band" src="../img/Cien años de soledad.jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+<div class="card" style="background-image: url('./img/fondo4.jpeg')">
+    <h2>Como Agua Para Chocolate</h2>
+    <a href="../libros/Como_agua_para_chocolate_Laura_Esquivel.pdf" target="_blank">
+        <img class="band" src="../img/Como agua para chocolate (Laura Esquivel).jpeg" >
+    </a>
+    <p style="text-decoration:none">Descripcion del libro</p>
+
+    <form id="formComentario">
+        <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+        <button type="submit">Agregar Comentario</button>
+    </form>
+
+    <div class="comentarios-lista">
+        <h2>Comentarios:</h2>
+        <div id="listaComentarios"></div>
+    </div>
+</div>
+
+    <script src="../assets/js/body.js"></script>
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/comentarios.js"></script>
+    <script src="https://kit.fontawesome.com/76e20a326e.js" crossorigin="anonymous"></script>
+</body>
+</html>

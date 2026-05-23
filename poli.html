@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBROS</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body style="background-image: url('../img/fondo2.jpeg')">
+    
+    <nav style="background-image: url('../img/fondo4.jpeg')">
+        <h1><i class="fa-solid fa-shop"></i>   <span id="nombre"> </span> </h1>
+        <ul>
+            <li><a href="../login.html" class="algo">Inicio</a></li>
+            <li><button onclick="cerrarSession()">LogOut</button></li>
+        </ul>
+    </nav>
+    
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Tu Amigo Invisible</h2>
+        <a href="../libros/Tu amigo invisible - Santiago L. Speranza.pdf" target="_blank">
+            <img class="band" src="../img/Tu Amigo Invisible.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Tu Amigo Invisible 2</h2>
+        <a href="../libros/Tu amigo invisible 2 - Santiago L. Speranza (1).pdf" target="_blank">
+            <img class="band" src="../img/Tu Amigo Invisible 2.png" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>La Muerte de Luciana B</h2>
+        <a href="../libros/La_muerte_lenta_de_Luciana_B_Guillermo_Martinez.pdf" target="_blank">
+            <img class="band" src="../img/LA MUERTE LENTA DE LUCIANA B_ - Barcelona 2007 - Avance editorial de MARTÍNEZ, Guillermo _ Llibres del Mirall.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Sherlock Holmes: Estudio en Escarlata</h2>
+        <a href="../libros/1.Sherlock Holmes Estudio en escarlata - Arthur Conan.pdf" target="_blank">
+            <img class="band" src="../img/Sherlock Holmes 1.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Sherlock Holmes: El Signo de los Cuatro </h2>
+        <a href="../libros/2. Sherlock Holmes El signo de los cuatro - Arthur Conan.pdf" target="_blank">
+            <img class="band" src="../img/Sherlock Holmes 2.png" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Sherlock Holmes: Las Aventuras de Sherlock Holmes</h2>
+        <a href="../libros/3. Las aventuras de Sherlock Holmes - Arthur Conan.pdf" target="_blank">
+            <img class="band" src="../img/Sherlock Holmes 3.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Sherlock Holmes: Las Memorias de Sherlock Holmes</h2>
+        <a href="../libros/4. Las Memorias de Sherlock Holmes - Arthur Conan.pdf" target="_blank">
+            <img class="band" src="../img/Sherlock Holmes 4.png" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Sherlock Holmes: El Sabueso de los Baskerville</h2>
+        <a href="../libros/5. Sherlock Holmes El sabueso de los Baskerville - Arthur Conan.pdf" target="_blank">
+            <img class="band" src="../img/Sherlock Holmes 5 El Sabueso de los Baskerville _ Conan Doyle.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2> Sherlock Holmes: El Regreso de Sherlock Holmes</h2>
+        <a href="../libros/6. El regreso de Sherlock Holmes - Arthur Conan.pdf" target="_blank">
+            <img class="band" src="../img/Sherlock Holmes 6.png" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Sherlock Holmes: El valle del terror</h2>
+        <a href="../libros/7. Sherlock Holmes El valle del terror - Arthur Conan.pdf" target="_blank">
+            <img class="band" src="../img/Sherlock Holmes 7.png" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Sherlock Holmes: El ultimo saludo de Sherlock Holmes </h2>
+        <a href="../libros/8. El ultimo saludo de Sherlock Holmes - Arthur Conan.pdf" target="_blank">
+            <img class="band" src="../img/Sherlock holmes 8.png" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Sherlock Holmes: El archivo de Sherlock Holmes </h2>
+        <a href="../libros/9. El archivo de Sherlock Holmes - Arthur Conan.pdf" target="_blank">
+            <img class="band" src="../img/Sherlock holmes 9.png" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>El Tunel</h2>
+        <a href="../libros/El_tunel_Ernesto_Sabato.pdf" target="_blank">
+            <img class="band" src="../img/El tunel.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Billy Summers</h2>
+        <a href="../libros/Billy-Summers-Stephen-King.pdf" target="_blank">
+            <img class="band" src="../img/Billy Summers, Stephen King _ 9789022593806 _ Boeken _ bol_com.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>El Sótano de Oxford</h2>
+        <a href="../libros/El_sotano_de_Oxford_Cara_Hunter.pdf" target="_blank">
+            <img class="band" src="../img/El sótano de Oxford.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Alguien está Mintiendo</h2>
+        <a href="../libros/Alguien esta mintiendo 1.pdf" target="_blank">
+            <img class="band" src="../img/ALGUIEN ESTÁ MINTIENDO - MCMANUS KAREN M_.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Alguien es el siguiente</h2>
+        <a href="../libros/Alguien_es_el_siguiente_Karen_M_McManus alguien esta mintiendo 2.pdf" target="_blank">
+            <img class="band" src="../img/Alguien tiene un secreto  --  Karen M_ McManus.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+    <div class="card" style="background-image: url('./img/fondo4.jpeg')">
+        <h2>Alguien ha Vuelto</h2>
+        <a href="../libros/Alguien ha vuelto - Karen M. McManus alguien esta mintiendo 3.pdf" target="_blank">
+            <img class="band" src="../img/“Alguien ha vuelto” de Karen M_ McManus_.jpeg" >
+        </a>
+        <p style="text-decoration:none">Descripcion del libro</p>
+
+        <form id="formComentario">
+            <textarea id="comentarioTexto" rows="4" cols="40" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <button type="submit">Agregar Comentario</button>
+        </form>
+
+        <div class="comentarios-lista">
+            <h2>Comentarios:</h2>
+            <div id="listaComentarios"></div>
+        </div>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+
+    <script src="../assets/js/body.js"></script>
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/comentarios.js"></script>
+    <script src="https://kit.fontawesome.com/76e20a326e.js" crossorigin="anonymous"></script>
+</body>
+</html>
