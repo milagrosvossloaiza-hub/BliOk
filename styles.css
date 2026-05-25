@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+nav {
+    background-color: #a98e64;
+    color: #a1894f;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #f9f9f9;
+    
+}
+.card h2 {
+    margin-top: 0;
+}
+ul li a{
+    text-decoration: none;
+    color: #f9f9f9;
+    margin-right: 20px;
+}
+a:hover {
+    padding: 5px;
+
+    color: #333;
+   
+}
+.card a {
+    text-decoration: none;
+    color: #a1894f; 
+}
+
+.card a:hover {
+    text-decoration: none;
+    color: #a1894f; 
+}
+.error {
+    color: rgb(131, 15, 15);
+    margin-left: 25px;
+}
+.error:hover{
+    padding: 8px;
+    color: black;
+    background-color: rgb(131, 15, 15);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+/*AGREGAR*/
+button{
+    background:transparent;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: rgb(131, 15, 10) 1px solid;
+    box-shadow: 1px 1px 10px ;
+}
+
+.band {
+    width: 290px;
+    height: 350px;
+    color: red;
+}
+
+a:hover{text-decoration:none;
+	color:#a1894f;
+    
+	}
+a :after{
+    text-decoration:none;
+	color:#a1894f;
+}
+.link{
+    color:#333;
+    text-decoration:none;
+}
+h2{
+   text-decoration: none;
+   color:#a1894f;
+}
+
+p{
+    text-decoration:none;
+	color:#a1894f;
+}
+
+--------------------------------------
+/* Estilos generales */
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
+    overflow: hidden; /* Evita que los elementos se desborden de la tarjeta */
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+
+
+button {
+    background: transparent;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: rgb(131, 15, 10) 1px solid;
+    box-shadow: 1px 1px 10px;
+}
+
+.band {
+    width: 290px;
+    height: 350px;
+    color: red;
+}
+
+/* Estilos para el formulario de comentarios */
+#formComentario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+textarea {
+    width: 290px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none; /* Evita que se pueda redimensionar */
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Estilo para la lista de comentarios */
+.comentarios-lista {
+    margin-top: 20px;
+    width: 100%; /* Se ajusta al tamaño de la carta */
+    max-height: 200px; /* Limita la altura para mostrar más comentarios */
+    overflow-y: auto; /* Añade desplazamiento vertical cuando sea necesario */
+    padding: 10px;
+    box-sizing: border-box;
+    text-decoration:none;
+	color:#a1894f;
+
+}
+
+.comentario {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.comentario:nth-child(odd) {
+    background-color: #e9f7ef;
+}
+
+.comentario:nth-child(even) {
+    background-color: #f3f3f3;
+}
+/* Nombre y fecha */
+.comentario-info {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.comentario-info .usuario {
+    color: #333;
+}
+
+.comentario-info .fecha {
+    font-size: 12px;
+    color: #777;
+}
+
+.algo{
+    color:#a1894f;
+}
